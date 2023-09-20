@@ -1,0 +1,27 @@
+@import "./styles/global.scss";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  font-family: $main-font;
+  direction: rtl;
+  background-color: rgb(212, 212, 212);
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: #078b6f;
+}
+::-webkit-scrollbar-thumb {
+  background: #073a2f;
+  border-radius: 25px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #052921;
+}

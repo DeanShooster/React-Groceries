@@ -1,0 +1,19 @@
+// Fonts
+$main-font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+// Themes
+$theme: #00a884;
+
+// Media
+$ipad: 1250px;
+$mobile: 600px;
+
+// Mixin
+@mixin hover {
+  &:hover {
+    cursor: pointer;
+    background-color: white;
+    color: $theme;
+    outline: 1px solid $theme;
+  }
+}
