@@ -10,6 +10,7 @@ body {
   font-family: $main-font;
   direction: rtl;
   background-color: rgb(212, 212, 212);
+  min-height: 100vh;
 }
 
 ::-webkit-scrollbar {

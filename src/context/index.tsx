@@ -6,6 +6,8 @@ interface IGroceriesContext {
   groceries: {
     shoppingList: IStoreItem[];
     storeList: IStoreItem[];
+    filteredShoppingList: IStoreItem[];
+    filteredStoreList: IStoreItem[];
   };
   dispatchGroceries: Function;
 }
@@ -24,6 +26,8 @@ export const GroceriesContext = createContext<IGroceriesContext>({
   groceries: {
     shoppingList: [],
     storeList: [],
+    filteredShoppingList: [],
+    filteredStoreList: [],
   },
   dispatchGroceries: () => {},
 });
@@ -31,7 +35,7 @@ export const GroceriesContext = createContext<IGroceriesContext>({
 type Props = { children: React.ReactNode };
 
 export const GroceriesContextProvider = ({ children }: Props) => {
-  const [groceries, dispatchGroceries]: any = useReducer(GroceriesReducer, undefined);
+  const [groceries, dispatchGroceries]: any = useReducer<any>(GroceriesReducer, undefined);
 
   useEffect(() => {
     (async () => {

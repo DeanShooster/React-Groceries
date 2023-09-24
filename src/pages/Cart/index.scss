@@ -1,0 +1,50 @@
+@import "../../styles/global.scss";
+
+.cart-page {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 24px;
+
+  .filter-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: $mobile) {
+      width: 100%;
+    }
+
+    .input-wrapper {
+      margin: 32px 0;
+      position: relative;
+
+      input {
+        width: 500px;
+        padding: 6px 12px;
+        border: none;
+        border-radius: 15px;
+        font-size: 1.2rem;
+        font-weight: 400;
+        letter-spacing: 1px;
+        color: $theme;
+        outline: 4px double $theme;
+
+        @media (max-width: $mobile) {
+          width: 100%;
+        }
+      }
+
+      img {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translate(0, -50%);
+        width: 20px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
