@@ -1,4 +1,4 @@
-const server = "http://34.244.204.92:8080";
+const server = "http://54.247.60.245:8080";
 
 const endpoints = {
   getGroceries: "groceries",
